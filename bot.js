@@ -23,9 +23,9 @@ oauth2Client.credentials = secret.token;
 // search for users using hashtag
 var bot = function() {
     var params = {
-        q: '#symfony',
+        q: '#vue',
         page: 4,
-        count: 10
+        count: 15
     }
     Twitter.get('users/search', params, function(err, data) {
       // if there no errors
@@ -39,7 +39,7 @@ var bot = function() {
                 if((follower > 1000) && (follower < 50000) ) {
                     values[i] = [data[i].name, data[i].followers_count]
                 }else {
-                    console.log("It didnt meetup");
+                    console.log("less number of followers");
                 }
             }
 
@@ -55,7 +55,7 @@ var bot = function() {
 bot();
 
 // fetch users details at a specified interval and post to google spreadsheet
-setInterval(bot, 3000);
+setInterval(bot, 3000000);
 
 
 function saveDataFromBot(auth, values) {
