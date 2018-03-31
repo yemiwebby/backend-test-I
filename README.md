@@ -1,6 +1,5 @@
 ## Back-end Developer Test
 
-
 ### Result
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/vs98ywKkhHU/0.jpg)](http://www.youtube.com/watch?v=vs98ywKkhHU)
 
